@@ -1,23 +1,27 @@
-<mat-toolbar role="heading" color="primary">
-  <a mat-button>
+<mat-toolbar role="header" color="primary">
+  <!--Navigation Buttons - Left Side-->
+  <!--TODO - REMOVE HREF - Use something else so the application does not reload (routes?)-->
+  <a mat-button href="">
     <span>
       <img style="vertical-align: middle; height:26px; margin:0 4px 3px 0;" src="favicon.ico"/>
-      <span style="vertical-align: middle;">Portfolio</span>
+      <span>Portfolio</span>
     </span>
   </a>
-  <a mat-button>
-    <span style="vertical-align: middle;">Projects</span>
+  <a mat-button href="projects">
+    <span>Projects</span>
   </a>
-  <a mat-button>
-    <span style="vertical-align: middle;">Experience</span>
+  <a mat-button href="experience">
+    <span>Experience</span>
   </a>
 
   <span class="spacer"></span>
-  <div class="social-btn-group" role="group" aria-label="Social Icons">
-    <button mat-icon-button class="social-btn" (click)="openWindow(githubUrl)">
+
+  <!--Social Media Buttons - Right Side-->
+  <div class="navbar-external-icons-container" aria-label="Social Icons">
+    <button mat-icon-button class="social-btn" title="GitHub" (click)="openWindow(githubUrl)">
       <mat-icon svgIcon="github" class="social-icon" aria-hidden="false" aria-label="Github"></mat-icon>
     </button>
-    <button mat-icon-button class="social-btn" (click)="openWindow(linkedinUrl)">
+    <button mat-icon-button class="social-btn" title="LinkedIn" (click)="openWindow(linkedinUrl)">
       <mat-icon svgIcon="linkedin" class="social-icon" aria-hidden="false" aria-label="LinkedIn"></mat-icon>
     </button>
   </div>
