@@ -14,8 +14,8 @@ export class NavbarComponent implements OnInit {
   linkedinUrl:string;
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer, private icons: IconConstants) {
-    iconRegistry.addSvgIconLiteral('github', sanitizer.bypassSecurityTrustHtml(icons.GITHUB_ICON))
-    iconRegistry.addSvgIconLiteral('linkedin', sanitizer.bypassSecurityTrustHtml(icons.LINKEDIN_ICON))
+    iconRegistry.addSvgIconLiteral('github', sanitizer.bypassSecurityTrustHtml(icons.GITHUB_ICON_STRING))
+    iconRegistry.addSvgIconLiteral('linkedin', sanitizer.bypassSecurityTrustHtml(icons.LINKEDIN_ICON_STRING))
 
     this.githubUrl = icons.GITHUB_URL;
     this.linkedinUrl = icons.LINKEDIN_URL;
@@ -27,7 +27,4 @@ export class NavbarComponent implements OnInit {
   openWindow(url: string) {
     window.open(url);
   }
-
-
-
 }
