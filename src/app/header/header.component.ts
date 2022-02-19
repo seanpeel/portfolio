@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatIconRegistry } from '@angular/material/icon';
-import { DomSanitizer } from '@angular/platform-browser';
-import { IconConstants } from './icon.constants';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -9,18 +7,15 @@ import { IconConstants } from './icon.constants';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  //Icons
+  readonly faGithub = faGithub;
+  readonly faLinkedin = faLinkedin;
 
-  githubUrl:string;
-  linkedinUrl:string;
+  //URLs
+  readonly githubUrl = "https://github.com/speel11";
+  readonly linkedinUrl = "https://www.linkedin.com/in/sean-peel-47263250";
 
-  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer, private icons: IconConstants) {
-    iconRegistry.addSvgIconLiteral('github', sanitizer.bypassSecurityTrustHtml(icons.GITHUB_ICON_STRING))
-    iconRegistry.addSvgIconLiteral('linkedin', sanitizer.bypassSecurityTrustHtml(icons.LINKEDIN_ICON_STRING))
-
-    this.githubUrl = icons.GITHUB_URL;
-    this.linkedinUrl = icons.LINKEDIN_URL;
-  }
-
+  constructor() { }
 
   ngOnInit(): void {}
 

@@ -1,15 +1,16 @@
 <mat-toolbar role="header" color="primary">
   <!--Navigation Buttons - Left Side-->
   <app-top-menu></app-top-menu>
+
   <span class="spacer"></span>
 
   <!--Social Media Buttons - Right Side-->
-  <div class="navbar-external-icons-container" aria-label="Social Icons">
-    <button mat-icon-button class="social-btn" title="GitHub" (click)="openWindow(githubUrl)">
-      <mat-icon svgIcon="github" class="social-icon" aria-hidden="false" aria-label="Github"></mat-icon>
+  <div class="header-external-icons-container">
+    <button mat-icon-button title="GitHub" (click)="openWindow(githubUrl)">
+      <fa-icon [icon]="faGithub" size="2x"></fa-icon>
     </button>
-    <button mat-icon-button class="social-btn" title="LinkedIn" (click)="openWindow(linkedinUrl)">
-      <mat-icon svgIcon="linkedin" class="social-icon" aria-hidden="false" aria-label="LinkedIn"></mat-icon>
+    <button mat-icon-button title="LinkedIn" (click)="openWindow(linkedinUrl)">
+      <fa-icon [icon]="faLinkedin" size="2x"></fa-icon>
     </button>
   </div>
 </mat-toolbar>

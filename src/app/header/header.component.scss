@@ -2,8 +2,14 @@
   flex: 1 1 auto;
 }
 
-.social-btn {
-  color: "basic";
+fa-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.header-external-icons-container {
+  display: flex;
+  justify-content: center;
 }
 
 mat-toolbar {
