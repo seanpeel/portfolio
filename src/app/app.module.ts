@@ -7,8 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { ExperienceComponent } from './experience/experience.component';
+import { ProjectsComponent } from './core/projects/projects.component';
+import { ExperienceComponent } from './core/experience/experience.component';
 
 @NgModule({
   declarations: [
