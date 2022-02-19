@@ -4,11 +4,11 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { IconConstants } from './icon.constants';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
 })
-export class NavbarComponent implements OnInit {
+export class HeaderComponent implements OnInit {
 
   githubUrl:string;
   linkedinUrl:string;

@@ -1,19 +1,6 @@
 <mat-toolbar role="header" color="primary">
   <!--Navigation Buttons - Left Side-->
-  <!--TODO - REMOVE HREF - Use something else so the application does not reload (routes?)-->
-  <a mat-button href="">
-    <span>
-      <img style="vertical-align: middle; height:26px; margin:0 4px 3px 0;" src="favicon.ico"/>
-      <span>Portfolio</span>
-    </span>
-  </a>
-  <a mat-button href="projects">
-    <span>Projects</span>
-  </a>
-  <a mat-button href="experience">
-    <span>Experience</span>
-  </a>
-
+  <app-top-menu></app-top-menu>
   <span class="spacer"></span>
 
   <!--Social Media Buttons - Right Side-->
@@ -26,4 +13,3 @@
     </button>
   </div>
 </mat-toolbar>
-
