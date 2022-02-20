@@ -1,16 +1,25 @@
-<mat-toolbar role="header" color="primary">
-  <!--Navigation Buttons - Left Side-->
-  <app-top-menu></app-top-menu>
+<mat-toolbar class="header-container" color="primary">
+    <!--Navigation Buttons - Left Side-->
+    <a mat-button routerLink="/" routerLinkActive="active">
+      <span>
+        <img style="vertical-align: middle; height:24px; margin:0 4px 3px 0;" src="favicon.ico"/>
+        <span>Portfolio</span>
+      </span>
+    </a>
+    <a mat-button routerLink="projects" routerLinkActive="active">
+      <span>Projects</span>
+    </a>
+    <a mat-button routerLink="experience" routerLinkActive="active">
+      <span>Experience</span>
+    </a>
 
-  <span class="spacer"></span>
+    <span class="spacer"></span>
 
-  <!--Social Media Buttons - Right Side-->
-  <div class="header-external-icons-container">
+    <!--Social Media Buttons - Right Side-->
     <button mat-icon-button title="GitHub" (click)="openWindow(githubUrl)">
-      <fa-icon [icon]="faGithub" size="2x"></fa-icon>
+      <fa-icon [icon]="faGithub" size="2x" class="header-external-icon"></fa-icon>
     </button>
     <button mat-icon-button title="LinkedIn" (click)="openWindow(linkedinUrl)">
-      <fa-icon [icon]="faLinkedin" size="2x"></fa-icon>
+      <fa-icon [icon]="faLinkedin" size="2x" class="header-external-icon"></fa-icon>
     </button>
-  </div>
 </mat-toolbar>
