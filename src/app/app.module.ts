@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProjectsComponent } from './core/projects/projects.component';
 import { ExperienceComponent } from './core/experience/experience.component';
+import { HomeComponent } from './core/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     ProjectsComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
